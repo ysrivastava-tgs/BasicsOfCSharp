@@ -9,7 +9,8 @@ namespace BasicsOfCSharp
         {
             //PrimitiveTypes.Do();
             //FlowControl.Do();
-            DateProgram.Do();
+            //DateProgram.Do();
+            StringProgram.Do();
         }
     }
 }
