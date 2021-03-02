@@ -11,9 +11,24 @@ namespace BasicsOfCSharp
         {
             //WriteText();
             //ReadText();
-            //WriteLine();
-            // ReadLine();
-            Delete();
+            WriteLine();
+            AppendLine();
+             ReadLine();
+           // Delete();
+        }
+        private static void AppendLine()
+        {
+            string dir = Directory.GetCurrentDirectory();
+            String path = dir + "\\dataLine.txt";
+            //File.Delete(path);
+            if (File.Exists(path))
+            {
+                Console.WriteLine("File exist");
+                List<String> l = new List<string>();
+                l.Add("This is line five");
+                l.Add("This is line six");
+                File.AppendAllLines(path,l);
+            }
         }
         /// <summary>
         /// deleting file
